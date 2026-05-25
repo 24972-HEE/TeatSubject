@@ -1,0 +1,129 @@
+/* รีเซ็ตค่าเริ่มต้นของเบราว์เซอร์ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ส่วนหัวของเว็บไซต์ */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    background-color: #1a365d;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header p {
+    color: #a0aec0;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* จัดรูปแบบ Container เป็น Grid ให้การ์ดเรียงต่อกันอัตโนมัติ */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ตกแต่งการ์ดแต่ละใบ */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+/* ป้ายกำกับหมวดหมู่ค่าย */
+.badge {
+    align-self: flex-start;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.badge-media { background-color: #e53e3e; }
+.badge-academic { background-color: #3182ce; }
+.badge-inter { background-color: #d69e2e; }
+
+h2 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+    color: #2d3748;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+/* กล่องรายละเอียด */
+.details {
+    list-style: none;
+    margin-bottom: 20px;
+    background: #f7fafc;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.details li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.deadline {
+    color: #e53e3e;
+    font-weight: bold;
+}
+
+/* ส่วนติดต่อและความน่าเชื่อถือ */
+.contact {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    margin-top: auto; /* ดันให้อยู่ด้านล่างสุดเสมอ */
+}
+
+.contact a {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.credibility {
+    background-color: #ebf8ff;
+    padding: 12px 15px;
+    border-left: 4px solid #3182ce;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    color: #2b6cb0;
+}
